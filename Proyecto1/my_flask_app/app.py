@@ -8,8 +8,7 @@ from sklearn.compose import ColumnTransformer
 app = Flask(__name__)
 
 # Cargar el modelo de regresión lineal
-#model = joblib.load('./models/linear_regression_model.joblib')
-model = joblib.load('/Users/dfgl43/Documents/ML-NLP/my_flask_app/models/linear_regression_model.joblib')
+model = joblib.load('./models/linear_regression_model.joblib')
 
 
 @app.route('/', methods=['GET'])
